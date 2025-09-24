@@ -7,9 +7,9 @@ You can visit the live store at: lara-store.site
 1. Infrastructure Setup with Terraform
 The infrastructure was built using a file-per-resource approach (not modules), improving clarity and maintainability.
 Key Terraform files:
-vpc.tf: Defines the VPC and its CIDR block and Creates public/private subnets across availability zones.
-eks.tf: Provisions the EKS cluster and node groups.
-providers.tf: Declares the AWS provider.
+```vpc.tf: Defines the VPC and its CIDR block and Creates public/private subnets across availability zones.
+```eks.tf: Provisions the EKS cluster and node groups.
+```providers.tf: Declares the AWS provider.
 locals.tf: Stores reusable variables and naming conventions.
 versions.tf: Defines the versions for the different providers used
 output.tf: This outputs some information about the cluster created and the vpc.
