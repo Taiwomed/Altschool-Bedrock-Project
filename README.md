@@ -1,4 +1,4 @@
-#Deploying a Retail App on AWS EKS with ALB Integration
+### Deploying a Retail App on AWS EKS with ALB Integration
 
 This project details the complete deployment of a containerized retail application to Amazon EKS using Terraform for infrastructure automation.
 It also integrates AWS’s Application Load Balancer (ALB) for secure external access. [Youcanvisitmylivestore](lara-store.site).
@@ -65,7 +65,7 @@ The infrastructure was built using a file-per-resource approach (not modules), i
 - **DNS issues:** Resolved by verifying Namecheap records and propagation.
 - **HTTPS failures:** Solved by updating ALB security group to allow port 443.
 
-👤 ### **IAM User Access & RBAC Integration**
+### **IAM User Access & RBAC Integration**
 -An IAM user was created and integrated with the EKS cluster using Kubernetes RBAC.
 -The user was granted read-only permissions to list and describe cluster resources.
 -Setup steps:
@@ -83,7 +83,7 @@ aws eks update-kubeconfig
 - 3. Test access: kubectl get pods
 kubectl get pods --namespace retail-dev
 
-##✅ **Conclusion**
+### Conclusion
 **This project successfully demonstrates:**
 - Infrastructure as Code using Terraform
 - Secure, scalable app hosting on EKS
